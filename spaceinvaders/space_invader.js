@@ -558,7 +558,7 @@ function gameOver(){
 loadScores();
 // load scores from localStorage
 function loadScores() {
-    const storedScores = localStorage.getItem('scores');
+    const storedScores = sessionStorage.getItem('scores');
     if (storedScores) {
         scores = JSON.parse(storedScores);
     }
@@ -566,7 +566,7 @@ function loadScores() {
 
 //save scores to localStorage
 function saveScores() {
-    localStorage.setItem('scores', JSON.stringify(scores));
+    sessionStorage.setItem('scores', JSON.stringify(scores));
 }
 
 //display the top scores
