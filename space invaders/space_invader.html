@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="space_invader.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="space_invader.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bigcontainer">
+        <div class="start"><P class="gameName">SPACE INVADERS</P>
+            <div class="point">
+                <img src="pic/alien1.png" alt=""><span> = 10 PTS</span><br><br><br>
+                <img src="pic/alien3.png" alt=""><span> = 50 PTS</span>
+            </div>
+            <button class="startButton">Start</button>
+        </div>
+        
+        <div class="container">
+            <div class="score">SCORE &nbsp;&nbsp;&nbsp;<span id="playerScore">0</span></div>
+            <div class="lives"><span>LIVES</span></div>
+            <img src="pic/defender.png" alt="" id="defender">
+            <img src="pic/bullet.png" alt="" id="missile"> 
+            <audio id="biu" src="sound/biu.mp3" type="audio"></audio>   
+            <audio id="burn" src="sound/burn.mp3" type="audio"></audio>   
+        </div>
+
+        <div class="over">
+            <P class="gameover">GAME OVER</P>
+            <p class="EnterName">Please Enter Your Name</p>
+            <input type="text" id="playerName" placeholder="Your Name"><br>
+            <button id="submitScoreButton">SUBMIT</button>           
+        </div>
+        <div class="scorelist">
+            <p class="list">Top 5 Scores</p>
+            <ul id="topScores"></ul>
+            <button id="restart">Play Again</button>    
+        </div>
+    </div>
+</body>
+</html>
