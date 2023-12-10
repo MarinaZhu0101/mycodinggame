@@ -13,6 +13,7 @@ $(document).ready(function(){
     biu = $('#biu')[0];
     burn = $('#burn')[0];
     isGameOver = false;
+    scores = [];
 
 
     $(".startButton").click(function() {
@@ -558,7 +559,7 @@ function gameOver(){
 loadScores();
 // load scores from localStorage
 function loadScores() {
-    const storedScores = sessionStorage.getItem('scores');
+    const storedScores = localStorage.getItem('scores');
     if (storedScores) {
         scores = JSON.parse(storedScores);
     }
@@ -566,7 +567,7 @@ function loadScores() {
 
 //save scores to localStorage
 function saveScores() {
-    sessionStorage.setItem('scores', JSON.stringify(scores));
+    localStorage.setItem('scores', JSON.stringify(scores));
 }
 
 //display the top scores
