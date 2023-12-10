@@ -25,18 +25,22 @@ $(document).ready(function(){
     });
 
     $(document).on("keydown", function(event){
-        switch (event.which) {
-            case 37:
-                defender.isMovingLeft = true;
-                break;
-            case 39:
-                defender.isMovingRight = true;
-                break;
-            case 32:
-                missile.isShooting = true;
-                biu.playbackRate = 1.5;
-                biu.play(); 
-                break;
+        if (!isGameOver){
+            switch (event.which) {
+                case 37:
+                    defender.isMovingLeft = true;
+                    break;
+                case 39:
+                    defender.isMovingRight = true;
+                    break;
+                case 32:
+                    missile.isShooting = true;
+                    if ((missile.x == defender.x + (defender.width - missile.width) / 2) && (missile.y == defender.y)){
+                        biu.playbackRate = 1.5;
+                        biu.play();                        
+                    }
+                    break;
+            }
         }                  
     });
 
