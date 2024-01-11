@@ -33,29 +33,123 @@ tw-story {
  background-image:url("https://static.wixstatic.com/media/3916e4_33df6f5b66e643d1be01c8c9f460d713~mv2.jpg");
  background-size:cover;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement('audio');
-audio.src = "https://static.wixstatic.com/mp3/3916e4_e2fd592f13bb4090a7cb72e193cc17d2.mp3";
-audio.loop = true;
-audio.play();
-</script><tw-passagedata pid="1" name="Start" tags="start" position="200,200" size="100,100">(set: $name to (prompt:&quot;Enter your name: &quot;, &quot;Default Name&quot;))
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="start" position="200,300" size="100,100">(set: $name to (prompt:&quot;Enter a male name: &quot;, &quot;Default Name&quot;))
 
 &#39;&#39;Hello (text-colour:magenta)[$name],
 Welcome to (text-colour:magenta)[Vagabond Café]!
 
-(text-colour: white)[You will play the role of an elderly man with Alzheimer&#39;s disease, who visits a café every day at 11 a.m. to order two espressos and two croissants, waiting for someone. You say that your wife once promised to meet you here. The café has different customers every day, tourists and backpackers traveling to this ancient city, who occasionally chat with you. But it seems your memory is always playing hide and seek with you. Can you recall any fragments of the past? Where exactly is your lover?]&#39;&#39;
 
-
+(text-colour: white)[You will play the role of a 50-year-old man with Alzheimer&#39;s disease, who visits a café every day at 11 a.m. to order two espressos and two croissants, waiting for someone. You say that your wife once promised to meet you here. The café has different customers every day, tourists and backpackers traveling to this ancient city, who occasionally chat with you. But it seems your memory is always playing hide and seek with you. Can you recall any fragments of the past? Where exactly is your lover?]&#39;&#39;
 
 
 [[Here We Go -&gt;Continue]]
 
-&lt;audio src=&quot; https://static.wixstatic.com/mp3/3916e4_e2fd592f13bb4090a7cb72e193cc17d2.mp3&quot; autoplay&gt;
-</tw-passagedata><tw-passagedata pid="2" name="Continue" tags="" position="400,200" size="100,100">xxx(text-colour:red)[xxx]
 
-[[yes -&gt; choice 1]] 
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3916e4_2744cfd7256b4ae8ae7411032993f3c0.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="2" name="Continue" tags="" position="400,300" size="100,100">&quot;Morining $name, How are you? Glad to see you agian today. Here&#39;s your coffee.&quot;
+A woman in her early forties, wearing a soft, pastel-colored blouse, is setting a cup of coffee on your table. She is the owner of this cafe. Her hair is neatly styled, shoulder-length, softly framing her face and enhancing her inviting smile. Her eyes sparkle with friendliness.
 
-[[no -&gt; choice 2]]
-</tw-passagedata><tw-passagedata pid="3" name=" choice 1" tags="" position="600,100" size="100,100"></tw-passagedata><tw-passagedata pid="4" name=" choice 2" tags="" position="600,300" size="100,100"></tw-passagedata></tw-storydata>
+&lt;img src=&quot;https://static.wixstatic.com/media/3916e4_18ba1600df074a0aa74d29bd7c24dc94~mv2.png&quot;&gt;
+
+You lift your head up and replied:
+[[&quot;Thank you! Have a nice day!&quot; -&gt;Photographer]] 
+[[&quot;Morning Grace, thank you!&quot; -&gt;Grace]]
+</tw-passagedata><tw-passagedata pid="3" name="Photographer" tags="" position="900,300" size="100,100">You take a sip of coffee, starting to observing the people in the café. 
+
+A tourist with a camera around her neck enters the café, intrigued by its quaint charm. She decides to sit near your table.
+
+You notice her camera is the classic Leica M3. You start to talk to the photographer.
+
+&lt;img src=&quot;https://static.wixstatic.com/media/3916e4_5621f14f5add41b0a36e11b47e9b65d7~mv2.jpeg&quot; width=300px&gt;
+
+[[Ask her abour her favourite photograph. -&gt;photo]]
+[[Discuss the importance of photography in preserving memories. -&gt;memory]]</tw-passagedata><tw-passagedata pid="4" name="Grace" tags="" position="525,125" size="100,100">Grace feels a little suprised. She replied you a smile and back to work.
+
+While you are enjoying your brunch, the music in the cafe arouse your interest. The melody is so familiar to you. You suddenly feel your eyes moistening, but you don&#39;t know why. You must have listened this song for many many times, without even realizing it, you find yourself unconsciously humming along.
+
+Do you know the name of the song?
+
+[[Winds of the Old Days -&gt;cry]]
+[[Diamonds and Rust -&gt; talk]]
+
+&lt;audio src=&quot;https://sw-sycdn.kuwo.cn/8aea6d775a3bf885a1e632d3efcc40a8/659eeca4/resource/n2/46/22/1515148338.mp3?from=vip&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="5" name="cry" tags="" position="675,175" size="100,100">You guessed incorrectly. As you struggle to recall the song&#39;s name, you begin to cry.
+
+Grace immediately comes to you, gives you a warm hug,&quot;$name, don&#39;t worry. It&#39;s ok. It will be all right.&quot;
+
+You stop crying and look into Grace&#39;s face, and say:
+
+[[&quot;Oh, Who are you?&quot; -&gt;friend]]
+[[&quot;I&#39;m good, I was thinking the song must have relation with my missing wife.&quot;-&gt;Photographer]]
+
+</tw-passagedata><tw-passagedata pid="6" name=" talk" tags="" position="700,25" size="100,100">You guessed correctly.
+
+Grace opens the window near you, letting some fresh air come into the room. Then she comes closer to you and add more coffee into your cup,&quot;$name, I like this song very much.&quot;
+
+It&#39;s a rainy day outside, but her smile makes you feel sunshine in your heart.
+
+[[You continue have your coffee. -&gt;Photographer]] </tw-passagedata><tw-passagedata pid="7" name="friend" tags="" position="1000,0" size="100,100">Grace comes closer to you and says,
+
+&quot;I&#39;m Grace, one of your best friends. Don&#39;t worry, I&#39;m always by your side.&quot;
+
+
+--THE END--</tw-passagedata><tw-passagedata pid="8" name="photo" tags="" position="1000,475" size="100,100">From her wallet, the photographer pulls out a faded photo.
+
+&lt;img src=&quot;https://static.wixstatic.com/media/3916e4_e83d868771e947039721719d951e1a81~mv2.png&quot; width=300px&gt;
+
+&quot;There was a white winter when I was studying at Trinity College Dublin. Since it rarely snows in Ireland, everyone was excited that day. We were running and shouting, and I will never forget that moment. This will be my lucky protector.&quot;
+
+In the dim light, your eyes linger, a silent yearning in your gaze. The image stirred a distant echo, like a forgotten melody at the brink of consciousness. You know you have been to there before.
+
+[[But you can&#39;t recall anything -&gt;memory]] </tw-passagedata><tw-passagedata pid="9" name="memory" tags="" position="1100,300" size="100,100">&quot;Photography is also one of my favorite hobbies. Although a camera&#39;s pixels can never match the human eye, I enjoy capturing beautiful moments. 
+
+In recent years, I have found myself forgetting things more often. I wait here every day, waiting for my wife. But she didn&#39;t come.&quot;
+
+When the photographer hear your words, she slowly approach you and hand you her most favourite photo，“My luck is with you now&quot;.
+
+&lt;img src=&quot;https://static.wixstatic.com/media/3916e4_e83d868771e947039721719d951e1a81~mv2.png&quot; width=200px&gt;
+
+[[You took the photo and expressed your gratitute -&gt;graduation]]
+[[You didn&#39;t take the photo and returned back -&gt;historian]]</tw-passagedata><tw-passagedata pid="10" name="graduation" tags="" position="1125,700" size="100,100">Grace walks past you and notices you looking at the old photograph.She gently says to you, &quot;This college is beautiful and I graduated from there.&quot;
+
+You ask Grace,&quot;Did i also graduate from Trinity?&quot;
+
+&quot;Yes...&quot;
+
+Suddenly, the entire room goes dark. You instinctively rise from your chair, walk towards the circuit breaker, and push it back up to restore power. After this series of actions, you freeze, unsure why you did these so proficiently and know the exactly location of the main power.
+
+[[You feel painful and decide to back home. -&gt;Continue]] 
+[[You walk towards Grace and talk to her. -&gt;sister]]
+[[Grace gives you a gracious hug and you back to the seat. -&gt;historian]] </tw-passagedata><tw-passagedata pid="11" name="historian" tags="" position="1400,300" size="100,100">The rain gets heavy, you stand by the window, trying to get a clear view of the unique scenery of the ancient city. 
+
+A man with a classic tweed jacket stands near by you. A vintage silk scarf and a timeless wristwatch accentuate his scholarly elegance,&quot;This cafe, like the city, is a testament to history. Its wallls have witnessed the ebb and flow of time, don&#39;t you think?&quot;
+
+&lt;img src=&quot;https://static.wixstatic.com/media/3916e4_ac856668518f45e0b057c24f31bbe962~mv2.jpg&quot; &gt;
+
+[[You nod your head. -&gt; city]]
+[[You shake your head. -&gt;shout]]</tw-passagedata><tw-passagedata pid="12" name="sister" tags="" position="1325,775" size="100,100">Grace apologizes to customers for the power outage. Without saying a word to you, she lightly pats your back.
+
+&quot;Grace, I&#39;can remember anything now. do you know my wife?&quot;
+&quot;She is my sister. This is her cafe. However, she passed away 3 years ago due to an accident.&quot;
+
+You feel your heart palpitating momentarily.
+
+--THE END--</tw-passagedata><tw-passagedata pid="13" name=" city" tags="" position="1600,300" size="100,100">The historain continues, &quot;The city has transformed remarkably over the years. The old bridges, the market square, remember how they used to be?&quot;
+
+-A flicker of memory, &quot;The bridges...We walked there...&quot;
+
+&quot;Do you recall the great celebration after the war? The streets were alive with joy and hope.&quot;
+
+-A distant look, &quot;Celebration...yes, we danced...&quot;
+
+&quot;It&#39;s remarkable how our city holds our stories, our joys and sorrows, much like this cafe.&quot;
+
+A tear trails down from your cheek, “I...we were there, with her...&quot;
+
+[[You feel struggle to recall what happened at that time, but you still want to recall. -&gt;struggle]]
+[[You stop to think about memory because it is too painful. -&gt;shout]] </tw-passagedata><tw-passagedata pid="14" name="shout" tags="" position="1450,475" size="100,100">You feel painful again and shout, &quot;I don&#39;t remember the details of the city, what happened, or the people I accompanied.&quot;
+
+When you shouted so loud that customers looked at you, Grace comes to you, holds your hands, and comforts you， “Alright, alright. $name, stop thinking about it and take a break.&quot;
+
+[[You back to your seat and continue have your coffee, waiting for someone. -&gt;chef]]</tw-passagedata><tw-passagedata pid="15" name="struggle" tags="" position="1800,300" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="chef" tags="" position="2050,425" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
