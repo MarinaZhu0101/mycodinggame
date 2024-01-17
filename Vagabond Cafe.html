@@ -33,7 +33,10 @@ tw-story {
  background-image:url("https://static.wixstatic.com/media/3916e4_33df6f5b66e643d1be01c8c9f460d713~mv2.jpg");
  background-size:cover;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="start" position="200,300" size="100,100">(set: $name to (prompt:&quot;Enter a male name: &quot;, &quot;Default Name&quot;))
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement('audio');
+audio.src = 'https://static.wixstatic.com/mp3/3916e4_2744cfd7256b4ae8ae7411032993f3c0.mp3';
+audio.loop = true;
+audio.play();</script><tw-passagedata pid="1" name="Start" tags="start" position="200,300" size="100,100">(set: $name to (prompt:&quot;Enter a male name: &quot;, &quot;Default Name&quot;))
 
 &#39;&#39;Hello (text-colour:magenta)[$name],
 Welcome to (text-colour:magenta)[Vagabond Café]!
@@ -53,7 +56,7 @@ A woman in her early forties, wearing a soft, pastel-colored blouse, is setting 
 You lift your head up and replied:
 [[&quot;Thank you! Have a nice day!&quot; -&gt;Photographer]] 
 [[&quot;Morning Grace, thank you!&quot; -&gt;Grace]]
-</tw-passagedata><tw-passagedata pid="3" name="Photographer" tags="" position="900,300" size="100,100">You take a sip of coffee, starting to observing the people in the café. 
+</tw-passagedata><tw-passagedata pid="3" name="Photographer" tags="" position="850,325" size="100,100">You take a sip of coffee, starting to observing the people in the café. 
 
 A tourist with a camera around her neck enters the café, intrigued by its quaint charm. She decides to sit near your table.
 
@@ -71,7 +74,7 @@ Do you know the name of the song?
 [[Winds of the Old Days -&gt;cry]]
 [[Diamonds and Rust -&gt; talk]]
 
-&lt;audio src=&quot;https://sw-sycdn.kuwo.cn/8aea6d775a3bf885a1e632d3efcc40a8/659eeca4/resource/n2/46/22/1515148338.mp3?from=vip&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="5" name="cry" tags="" position="675,175" size="100,100">You guessed incorrectly. As you struggle to recall the song&#39;s name, you begin to cry.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3916e4_10d18f45778c4401a09e0ee0038c2450.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="5" name="cry" tags="" position="675,175" size="100,100">You guessed incorrectly. As you struggle to recall the song&#39;s name, you begin to cry.
 
 Grace immediately comes to you, gives you a warm hug,&quot;$name, don&#39;t worry. It&#39;s ok. It will be all right.&quot;
 
@@ -125,7 +128,10 @@ A man with a classic tweed jacket stands near by you. A vintage silk scarf and a
 &lt;img src=&quot;https://static.wixstatic.com/media/3916e4_ac856668518f45e0b057c24f31bbe962~mv2.jpg&quot; &gt;
 
 [[You nod your head. -&gt; city]]
-[[You shake your head. -&gt;shout]]</tw-passagedata><tw-passagedata pid="12" name="sister" tags="" position="1325,775" size="100,100">Grace apologizes to customers for the power outage. Without saying a word to you, she lightly pats your back.
+[[You shake your head. -&gt;shout]]
+
+
+加入下雨声</tw-passagedata><tw-passagedata pid="12" name="sister" tags="" position="1325,775" size="100,100">Grace apologizes to customers for the power outage. Without saying a word to you, she lightly pats your back.
 
 &quot;Grace, I&#39;can remember anything now. do you know my wife?&quot;
 &quot;She is my sister. This is her cafe. However, she passed away 3 years ago due to an accident.&quot;
@@ -145,11 +151,166 @@ You feel your heart palpitating momentarily.
 A tear trails down from your cheek, “I...we were there, with her...&quot;
 
 [[You feel struggle to recall what happened at that time, but you still want to recall. -&gt;struggle]]
-[[You stop to think about memory because it is too painful. -&gt;shout]] </tw-passagedata><tw-passagedata pid="14" name="shout" tags="" position="1450,475" size="100,100">You feel painful again and shout, &quot;I don&#39;t remember the details of the city, what happened, or the people I accompanied.&quot;
+[[You stop to think about memory because it is too painful. -&gt;shout]] </tw-passagedata><tw-passagedata pid="14" name="shout" tags="" position="1725,525" size="100,100">You feel painful again and shout, &quot;I don&#39;t remember the details of the city, what happened, or the people I accompanied.&quot;
 
 When you shouted so loud that customers looked at you, Grace comes to you, holds your hands, and comforts you， “Alright, alright. $name, stop thinking about it and take a break.&quot;
 
-[[You back to your seat and continue have your coffee, waiting for someone. -&gt;chef]]</tw-passagedata><tw-passagedata pid="15" name="struggle" tags="" position="1800,300" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="chef" tags="" position="2050,425" size="100,100"></tw-passagedata></tw-storydata>
+[[You back to your seat and continue have your coffee, waiting for someone. -&gt;chef]]</tw-passagedata><tw-passagedata pid="15" name="struggle" tags="" position="1800,300" size="100,100">You try to recall what happened at that time, Your heart started to beat fast. It was also a rainy day. The laughter, the warmth of her hand in yours - all tantalizingly out of reach. With each elusive memory, a profound sense of loss engulfs you. It is not just the dance you are losing, but the essence of a shared life, a love story slipping away into the shadows of your fraying mind.
+
+You reach out your hand, as if inviting the companion on the other side to join you in a dance, but there is no one there. Suddenly, a flash appears before your eyes, and the pain is so intense that you almost feel dizzy.
+
+The historian said, &quot;You will find the person and I&#39;m sure that she is waiting for you as well.&quot;
+
+[[The his historian left cafe. -&gt;chef]] 
+
+</tw-passagedata><tw-passagedata pid="16" name="chef" tags="" position="2000,300" size="100,100">As the bustling café&#39;s chef took a brief respite, he stepped out into the fresh air, a lit cigarette in hand. Turning towards you, he politely inquired, &#39;Would you like a smoke?&#39; The aroma of coffee lingered in the background, creating a warm and inviting atmosphere.
+
+&lt;img src=&quot;
+https://static.wixstatic.com/media/3916e4_e76ed1e3872946a3aa84aca88d90b55b~mv2.png&quot; width=300px&gt;
+
+You replied:
+
+[[Yes -&gt;cake]]
+[[No, you want to back home -&gt;Continue]] </tw-passagedata><tw-passagedata pid="17" name="cake" tags="" position="2200,300" size="100,100">The chef said, &quot;$name, how are you?&quot;
+
+You said, &quot;I&#39;m good.&quot;
+
+-&quot;If you feel sad, you can have a piece of honey cake. The sweet taste of the honey cake might evoke some warmth in your heart. &quot;
+
+-&quot;Oh, honey cake...&quot; You memory starts flow again. 
+
+-“Well, it&#39;s a traditional recipe passed down through generations. The combination of honey, spices, and layers of moist cake makes it a timeless favorite. Do you like honey cake?&quot;
+
+[[&quot;Yes, I love.&quot; -&gt;sweet]]
+[[&quot;No, I feel too sweet.&quot;-&gt;sad]]</tw-passagedata><tw-passagedata pid="18" name="sweet" tags="" position="2400,200" size="100,100">You say with a smile, &quot;Many families have their own twist on the honey cake. I remember my wife baking it during festive seasons, filling our home with warmth and the sweet aroma of honey. &quot;
+
+The chef replies, &quot;Absolutely! It&#39;s more than just a dessert. It&#39;s a connection to our roots and the sweet moments that define us.&quot;
+
+But your smile turns into pain, &quot;But she... she&#39;s not here anymore, and I often forget her smile.&quot;
+
+The chef pats my back and says, &quot;Whether it&#39;s the past, present, or future, she has always been by your side.“
+
+[[You back to the seat in the cafe. -&gt;table]]</tw-passagedata><tw-passagedata pid="19" name="sad" tags="" position="2425,475" size="100,100">You close your eyes and say,&quot;I remember... I once tasted honey cake with my wife. She always said it was her favorite.&quot;
+
+Suddenly, a pained expression on your face, &quot;But she... she&#39;s not here anymore, and I often forget her smile.&quot;
+
+The chef replied, &quot;Memories can be painful, but they&#39;re also precious. The honey cake might become a link to the beautiful moments with your wife.&quot;
+
+You don&#39;t want to think more as you feel painful again.
+
+[[You back to the seat in the cafe. -&gt;wall]]</tw-passagedata><tw-passagedata pid="20" name="table" tags="" position="2600,300" size="100,100">As you return to your seat, you are surprised to see a honey cake on the table.
+
+&lt;img src=&quot;
+https://static.wixstatic.com/media/3916e4_f8129d364c4341eeacef7cf3013ce49c~mv2.jpeg&quot; width=200px&gt;
+
+Chef looks at you and gives you a warm smile, &quot;You are always welcome here.&quot;
+
+[[You start to enjoy your cake. -&gt;wall]]
+</tw-passagedata><tw-passagedata pid="21" name="wall" tags="" position="2800,350" size="100,100">You find a photo with a wooden frame on the wall of the cafe. You  looks confused and distressed because in the photo it&#39;s Grace and you together.
+
+You talk to yourself, &quot;This is Grace...We were so happy. But why can&#39;t I remember anything?&quot;
+
+[[You want to ask a waitress. -&gt;waitress]]
+[[You want to talk to Grace. -&gt;where]]
+</tw-passagedata><tw-passagedata pid="22" name="waitress" tags="" position="3000,250" size="100,100">“Please...Please tell me why my photo is there? Why I‘m with Grace? Oh, Why I know her name? Who is Grace?&quot; You almost shout out.
+
+The waitress gently approaches to you, &quot;Is everything okay, $name?&quot;
+
+You are getting more and more painful and can&#39;t control yourself.
+
+[[You throw the coffee cup on the floor. -&gt;angry]]
+[[You continue to ask the waitress. -&gt;question]]</tw-passagedata><tw-passagedata pid="23" name="where" tags="" position="3475,525" size="100,100">Grace comes out and runs in front of you, &quot;$name, It&#39;s ok. Grace is here. Don&#39;t be distressed.&quot;
+ 
+ You ask Grace in pain, &quot;Who are you? Do you know my wife?&quot;
+ 
+ Grace replied, &quot;Let me tell you the story, $name.&quot;
+ 
+ [[You follow Grace to kitchen. -&gt;kitchen]]
+ [[You follow Grace to the outside street. -&gt;street]]</tw-passagedata><tw-passagedata pid="24" name="angry" tags="" position="3275,325" size="100,100">&lt;img src=&quot;
+https://static.wixstatic.com/media/3916e4_4cd0529a2d4b407dbf55ef700485f491~mv2.webp&quot; width=300px&gt;
+
+A customer near you feels quite angry, &quot;Hey,  watch what you are doing. This is public, not your home.&quot;
+
+The waitress makes apologises for you.
+
+The young customer continues,&quot;Well, why you have such customer. People are not here to accommodate him.&quot;
+
+The waitress apologises again but says, &quot;Please be respectful to a patient like $name. He is a valued guest here, just like everyone else.
+
+[[You start to say sorry. -&gt;where]] </tw-passagedata><tw-passagedata pid="25" name="question" tags="" position="3275,175" size="100,100">“Please tell me where is my wife. Did I know about Grace? Is she my wife?&quot;
+
+The waitress starts to comfort me, &quot;Take a breath and calm down, $name, Grace is busy now, she will come out immediately.&quot;
+
+[[You agree to wait for Grace. -&gt;where]]</tw-passagedata><tw-passagedata pid="26" name="kitchen" tags="" position="3750,575" size="100,100">&lt;img src=&quot;
+https://static.wixstatic.com/media/3916e4_47a689be0a124eb6921e2b10f20f6e31~mv2.webp&quot; width=300px&gt;
+
+Grace says, &quot;$name, Come with me, let&#39;s go to the kitchen.&quot;
+
+You feel so sad, &quot;This place... it feels so familiar, like I&#39;ve seen it before.&quot;
+
+Grace looks at you and holds your arm, &quot;$name, we married 25 years ago. That was our 10 years&#39; celebration picture. This is the kitchen of the coffee shop we started together. &quot;
+
+[[You can&#39;t remember anything in the past. -&gt;sore]]
+[[You remember something happened to you. -&gt;time]] </tw-passagedata><tw-passagedata pid="27" name="street" tags="" position="3625,350" size="100,100">It is no longer raining, and some sunlight is peeking through the clouds. 
+
+Grace looks at you and holds your hand, &quot;The photo you saw is you and your wife, that&#39;s true. But it&#39;s not me. Since childhood, many people mistake us for each other because of our similar appearances.&quot;
+
+You seem recall the name, &quot;Mary...Mary...&quot;
+
+Grace is surprised that it seemed like you remember what happened, &quot;$name, Mary is my sister.&quot;
+
+[[You can&#39;t remember anything but her name. -&gt;pain]]
+[[You remember something happened to Mary. -&gt;lost]] </tw-passagedata><tw-passagedata pid="28" name="pain" tags="" position="3800,175" size="100,100">You tell Grace, &quot;When I try to think about what happened, I feel quite painful. I can&#39;t remember things now, Grace.&quot;
+
+Grace says that you are sufferring dementia because of an accident, &quot;Mary died becase of the car accident 3 years ago.&quot;
+
+You burst out to cry, &quot;Oh, so I can&#39;t see her again. She will not back. She promised me to meet in the cafe.&quot;
+
+[[Grace continues. -&gt;cafe]]</tw-passagedata><tw-passagedata pid="29" name="lost" tags="" position="3800,350" size="100,100">Your tears stream down, &quot;It is an accident, is it?&quot;
+
+Grace&#39;s eyes are moist, &quot;It was a terrible day. You were driving home after work. And then the accident happened. It was severe. Mary...She didn&#39;t make it.&quot;
+
+-&quot;What? No, that can&#39;t be...Grace is gone?&quot;
+
+-&quot;Yes. It&#39;s been hard on you. After that day, you slowly started forgetting things.&quot;
+
+
+[[Grace continues. -&gt;cafe]]</tw-passagedata><tw-passagedata pid="30" name="cafe" tags="" position="4025,300" size="100,100">&quot;Remember this coffee shop? It&#39;s the one you and Mary started together.&quot;Grace says gently, &quot;You both loved this place. After Mary passed away, I decided to take over. It was my way of honoring her memory.&quot;
+
+You ask, &quot;We did? It feels familiar, but it&#39;s like a dream I can&#39;t quite catch.&quot;
+
+&quot;I wanted to keep her dream alive. And, it gives me a chance to look after you too. If Mary were here, she&#39;d be so happy to see us together.&quot; Grace replies, &quot;$name, Don&#39;t worry or blame yourself for not rememberring. We&#39;re here for you. We&#39;re family, and that&#39;s what family does.&quot;
+
+
+--THE END--</tw-passagedata><tw-passagedata pid="31" name="sore" tags="" position="3925,700" size="100,100">Grace continues, &quot;three years ago, you began to suffer from dementia and slowly forgot many things, including me.&quot;
+
+You ask, &quot;Oh, no Grace. I&#39;m so sorry. But why I allways come to the cafe at 11 o&#39;clock?&quot;
+
+Grace: &quot;Because that used to be the time when you always came to help. Even amidst the forgetfulness, you maintained this habit.&quot;
+
+You: &quot;I really don&#39;t remember, but it feels so familiar.&quot;
+
+[[Grace continues. -&gt;love]]</tw-passagedata><tw-passagedata pid="32" name="time" tags="" position="3925,500" size="100,100">Grace continues, &quot;Three years ago, you began to suffer from dementia and slowly forgot many things, including me.&quot;
+
+You:&quot;Oh no, Grace...But there&#39;s one thing I always remember.&quot;
+
+Grace:&quot;Yes, coming to the coffee shop at 11 o&#39;clock every day.&quot;
+
+You ask, &quot;Why 11 o&#39;clock?&quot;
+
+Grace: &quot;Because that used to be the time when you always came to help. Even amidst the forgetfulness, you maintained this habit.&quot;
+
+[[Grace continues. -&gt;love]]</tw-passagedata><tw-passagedata pid="33" name="love" tags="" position="4150,575" size="100,100">Grace gives you a hug, &quot;Though dementia has taken away many of your memories, please believe that I have always been by your side.&quot;
+
+You reply, &quot;Even if I&#39;ve forgotten a lot, having you by my side makes me feel less alone.&quot;
+
+Grace kisses your cheek, &quot;No matter what happens, I&#39;ll be here, supporting and accompanying you. Even though you may forget me tomorrow. Our memories might fade, but our emotions and connection will never disappear.&quot;
+
+&lt;img src=&quot;
+https://static.wixstatic.com/media/3916e4_d3df5fb43c044f6d8bc428bd08c58c8b~mv2.webp&quot; width=200px&gt;
+
+
+--THE END--</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
