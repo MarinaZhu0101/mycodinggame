@@ -5,6 +5,7 @@
     width: 800px;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 .ball{
     background-color: white;
